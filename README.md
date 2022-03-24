@@ -38,7 +38,7 @@ and click on `Fork` in the upper right corner. This will create a fork in your G
 repository that is under your control. Now clone the repository locally so you can start working on it:
 
 ```
-git clone https://github.com/[your github username]/nd0821-c2-build-model-workflow-starter.git
+git clone https://github.com/AhmedCheikhRouhou/nd0821-c2-build-model-workflow-starter.git
 ```
 
 and go into the repository:
