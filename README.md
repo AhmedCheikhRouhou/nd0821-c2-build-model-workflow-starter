@@ -31,6 +31,11 @@ In this project you will build such a pipeline.
   * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
 - [Cleaning up](#cleaning-up)
 
+## Links
+
+[Weights & Biases project](https://wandb.ai/blacktooth/nyc_airbnb)
+[Github Repo](https://github.com/AhmedCheikhRouhou/nd0821-c2-build-model-workflow-starter/)
+
 ## Preliminary steps
 ### Fork the Starter kit
 Go to [https://github.com/udacity/nd0821-c2-build-model-workflow-starter](https://github.com/udacity/nd0821-c2-build-model-workflow-starter)
