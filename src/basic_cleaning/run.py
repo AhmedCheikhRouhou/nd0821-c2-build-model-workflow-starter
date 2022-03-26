@@ -40,7 +40,7 @@ def go(args):
     )
     
 
-    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    idx = df['longitude'].between(-74.15, -73.60) & df['latitude'].between(40.6, 41.1)
     df = df[idx].copy()
 
     df.to_csv("clean_sample.csv", index=False)
