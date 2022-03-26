@@ -67,7 +67,7 @@ def go(config: DictConfig):
                 os.path.join(hydra.utils.get_original_cwd(), "src", "data_check"),
                 "main",
                 parameters={
-                    "csv": "sample.csv:latest",
+                    "csv": "clean_sample.csv:latest",
                     "ref": "clean_sample.csv:reference",
                     "kl_threshold": config['data_check']['kl_threshold'],
                     "min_price": config['etl']['min_price'],
@@ -79,7 +79,7 @@ def go(config: DictConfig):
                 f"{config['main']['components_repository']}/train_val_test_split",
                 "main",
                 parameters={
-                    "input": "sample.csv:latest",
+                    "input": "clean_sample.csv:latest",
                     "test_size": "0.3",
                 },
             )
@@ -97,7 +97,7 @@ def go(config: DictConfig):
                 os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
                 "main",
                 parameters={
-                    "trainval_artifact": "sample.csv:latest",
+                    "trainval_artifact": "clean_sample.csv:latest",
                     "val_size": 0.3,
                     "rf_config": rf_config,
                     "output_artifact":"random_forest_export",
